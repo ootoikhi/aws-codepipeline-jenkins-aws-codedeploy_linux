@@ -44,11 +44,10 @@ reports:
     discard-paths: yes
     file-format: CUCUMBERJSON # default is JUNITXML
 artifacts:
-  files:
-    - '**/*'
-  base-directory: base_dir
-  name: build-artifact-name
-  discard-paths: no
+files:
+- '**/*'
+name: s3-to-s3-latest-build.zip
+
 cache:
   paths:
     - '/root/.m2/**/*'
